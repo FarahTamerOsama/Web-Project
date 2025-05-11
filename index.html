@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Veterinary Clinic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Arial', sans-serif; direction: ltr; }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1574158622682-e40e69881006') center center / cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 5px black;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    footer {
+  background-color: #d7dee4; 
+  color: #212529; 
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slides {
+    display: flex;
+    width: 230%; 
+    animation: slide 10s infinite;
+  }
+
+  .slides img {
+    width: 100%;
+    height: auto;
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+  }
+    #backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #9eaec4;
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+#backToTopBtn:hover {
+  background-color: #084298;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">
+      <img src="images/icons8-grinning-cat-94.png" alt="Logo" width="40" class="me-2">
+        <strong>VetClinic</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-dark" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="appointment.html">Appointment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="contact.html">Contact</a>
+          </li>
+           <li class="nav-item"><a class="btn btn-outline-primary ms-3" href="login.html">Login</a></li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav> 
+   <section class="hero">
+    <div class="text-center">
+      <h1>Welcome to Our Veterinary Clinic</h1>
+      <p>Comprehensive care for your beloved pets</p>
+      <a href="appointment.html" class="btn btn-primary mt-3">Book Now</a>
+    </div>
+  </section> 
+   <section class="container py-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Who Are We?</h2>
+        <p>
+          We are a veterinary clinic dedicated to providing the best medical care for your pets. Our team of veterinarians is committed to high-quality services and a safe environment.
+          We have doctors of all specialties trained to the highest level.We have doctors for comprehensive examination, vaccinations, nutrition, and surgeries such as: dental and eye surgery.
+          We also have doctors to deal with emergency and critical cases.We treat animals gently, kindly and professionally.
+          If you deal with us, you will know this yourself and you will never have to worry about your cute animal.
+          
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://i.pinimg.com/736x/52/f4/c8/52f4c8adef23786b694f3558bf521a76.jpg" class="img-fluid rounded" alt="Clinic">
+      </div>
+    </div>
+  </section> 
+
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Regular Check-ups</h5>
+              <p class="card-text">Full health monitoring for your pet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Vaccinations</h5>
+              <p class="card-text">All necessary vaccines to protect your animal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Minor Surgeries</h5>
+              <p class="card-text">Safe and efficient minor operations.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Dental Care</h5>
+              <p class="card-text">Teeth cleaning and oral health checks for pets.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Grooming</h5>
+              <p class="card-text">Professional grooming services to keep pets clean and stylish.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Pet Nutrition</h5>
+              <p class="card-text">Consultations on diet and supplements tailored to your pet's needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Why Choose VetClinic?</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Experienced Vets</h5>
+            <p>Our team is composed of highly skilled and passionate veterinarians.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Modern Equipment</h5>
+            <p>We use advanced tools and technologies for diagnosis and treatment.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Pet-Friendly Environment</h5>
+            <p>Comfortable, clean, and calm setting for all kinds of pets.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Emergency Services</h5>
+            <p>Available 24/7 to handle urgent medical situations quickly and effectively.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Affordable Plans</h5>
+            <p>We offer flexible pricing and packages to fit your budget and pet needs.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Personalized Care</h5>
+            <p>Each pet receives tailored treatment plans for optimal health outcomes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">What Our Clients Say</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="border p-4 rounded shadow-sm h-100">
+            <p>"The doctors were so kind and professional. My dog feels better already!"</p>
+            <h6 class="text-end text-muted">— Sarah M.</h6>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="border p-4 rounded shadow-sm h-100">
+            <p>"Clean clinic and very helpful staff. Highly recommended!"</p>
+            <h6 class="text-end text-muted">— Ahmed R.</h6>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="border p-4 rounded shadow-sm h-100">
+            <p>"They took care of my cat like it was their own. Thank you VetClinic!"</p>
+            <h6 class="text-end text-muted">— Lina K.</h6>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="border p-4 rounded shadow-sm h-100">
+            <p>"Fast and reliable service. They answered all my questions patiently."</p>
+            <h6 class="text-end text-muted">— Omar N.</h6>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="border p-4 rounded shadow-sm h-100">
+            <p>"My rabbit received amazing care! The clinic is very welcoming."</p>
+            <h6 class="text-end text-muted">— Yasmine T.</h6>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="border p-4 rounded shadow-sm h-100">
+            <p>"Excellent service and professional team. I will definitely come again."</p>
+            <h6 class="text-end text-muted">— Kareem A.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="images/pngtree-vet-clinic-vector-png-image_11245707.png"alt="صورة 1">
+      <img src="images/pngtree-vet-clipart-cartoon-vets-animal-doctor-veterinarian-with-veterinary-stethoscope-and-vector-png-image_6827915.png" alt="صورة 2">
+      <img src="images/pngtree-vet-clipart-veterinarian-with-her-cat-and-pet-cartoon-vector-png-image_11092428.png" alt="صورة 3">
+    </div>
+  </div>
+
+
+  <section class="container py-5">
+    <h2 class="mb-4 text-center">Our Veterinary Clinic</h2>
+    <div class="mb-4">
+      <p id="intro">
+        We believe every pet deserves exceptional care. Our clinic offers a wide range of services to ensure your furry friends are always happy and healthy.
+        <span id="dots">...</span>
+        <span id="moreText" class="d-none">
+          Whether it's routine checkups, emergency treatment, or grooming, our dedicated staff is here to help. We aim to create a welcoming environment for both pets and their owners, with the latest medical technologies and a compassionate team.
+        </span>
+      </p>
+      <button class="btn btn-link p-0" onclick="toggleReadMore()">Read more</button>
+    </div>
+    <div>
+      <p>
+        We are proud to serve the community with high-quality veterinary care. Visit us any day of the week and experience the difference in our personalized approach to pet health.
+      </p>
+    </div>
+  </section>
+  
+  <script>
+    function toggleReadMore() {
+      const dots = document.getElementById("dots");
+      const moreText = document.getElementById("moreText");
+      const btn = event.target;
+  
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        moreText.classList.add("d-none");
+        btn.textContent = "Read More";
+      } else {
+        dots.style.display = "none";
+        moreText.classList.remove("d-none");
+        btn.textContent = "read Less";
+      }
+    }
+  </script>
+
+  <footer>
+    <div class="container">
+      All rights reserved &copy; 2025 - Our Veterinary Clinic
+    </div>
+  </footer>
+  
+<button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
+    ↑
+  </button>
+
+  <script>
+    const backToTopBtn = document.getElementById("backToTopBtn");
+  
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+  
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>  

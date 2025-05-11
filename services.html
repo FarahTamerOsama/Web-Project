@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services - Veterinary Clinic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body { font-family: 'Cairo', sans-serif; }
+    .navbar-brand span {
+      font-weight: bold;
+      color: #fff;
+    }
+    .footer {
+      background-color: #708397;
+      color: #fff;
+      padding: 20px 0;
+    }
+    .icon-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #708397;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      margin: auto;
+    }
+
+    #backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #9eaec4;
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+#backToTopBtn:hover {
+  background-color: #084298;
+}
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #9ba9bb;">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/icons8-veterinarian-50.png" alt="Logo" width="40" class="me-2">
+            <strong>VetCare</strong> Clinic
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="appointment.html">Appointment</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-outline-secondary ms-3" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Medical Check-up</h5>
+              <p class="card-text">Comprehensive health assessment for your pet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Vaccinations</h5>
+              <p class="card-text">All necessary vaccines to protect against diseases.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Surgery</h5>
+              <p class="card-text">Minor and major surgeries with precision and care.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Grooming</h5>
+              <p class="card-text">Professional grooming services to keep your pet clean and healthy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Dental Care</h5>
+              <p class="card-text">Oral health services including cleaning and check-ups.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Behavioral Therapy</h5>
+              <p class="card-text">Expert help for behavioral issues in pets.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Emergency Care</h5>
+              <p class="card-text">24/7 urgent medical assistance for critical cases.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Eye Care</h5>
+              <p class="card-text">Eye exams and treatments for common eye conditions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-center">
+    <img src="images/86148f0c145e26d470ada80e764b422a.jpg" alt="اسم الخدمة" class="img-fluid rounded h-50 w-100">
+  </div>
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-5">Why Choose Us?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="icon-circle mb-3">❤️</div>
+        <h5>Compassionate Care</h5>
+        <p>We treat every pet like family, with love and attention.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-circle mb-3">🩺</div>
+        <h5>Professional Staff</h5>
+        <p>Experienced veterinarians and friendly support team.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-circle mb-3">⏱️</div>
+        <h5>Quick Appointments</h5>
+        <p>Easy booking system with minimal wait times.</p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="icon-circle mb-3">⚕️</div>
+        <h5>Comprehensive Services</h5>
+        <p>From check-ups to surgeries, we cover all your pet’s needs.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-circle mb-3">✨</div>
+        <h5>Clean Facilities</h5>
+        <p>Sanitized, pet-friendly environment for safety and comfort.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-circle mb-3">📞</div>
+        <h5>24/7 Support</h5>
+        <p>Emergency services and customer care always available.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">What Our Clients Say</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow-sm rounded h-100">
+            <p class="mb-1">"They took amazing care of my cat. Very friendly and professional staff!"</p>
+            <h6 class="mt-3 mb-0 fw-bold">– Manal M.</h6>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow-sm rounded h-100">
+            <p class="mb-1">"Best veterinary clinic in town! They saved my dog's life."</p>
+            <h6 class="mt-3 mb-0 fw-bold">– Ahmed K.</h6>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow-sm rounded h-100">
+            <p class="mb-1">"Clean environment and amazing service. Highly recommend VetClinic."</p>
+            <h6 class="mt-3 mb-0 fw-bold">– Salma R.</h6>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow-sm rounded h-100">
+            <p class="mb-1">"Very patient and gentle with my anxious puppy. Thank you so much!"</p>
+            <h6 class="mt-3 mb-0 fw-bold">– Omar T.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Do you offer walk-in bath services?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we have a 30-minute walk-in bathing service – no kenneling required – for specific breeds. A Quick Wash is a 45-minute bath with 2-in-1 pH-balanced shampoo and includes a professional blow dry. Call your local salon for availability or contact our Customer Service Center at 1-888-332-7387.
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            What vaccinations do you require?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            To maintain a safe, comfortable environment, we require all pets to be current on their rabies vaccinations and to wait at least 48 hours after any vaccinations before checking in. Proof of rabies vaccination in the form of paperwork is required. The waiting period helps to ensure your pet isn't sore at the injection site, which can cause irritability or lethargy. This waiting period also is to prevent stressing a pet who may be experiencing an unexpected allergic reaction from a vaccine/vaccination. Puppies and kittens between 8 weeks and 4 months of age (3 months in Indiana) may receive services in the salon without vaccinations. In New York City, 6-month Bordetella and DHPP with Adenovirus are also required. In Iowa, DPP with Adenovirus is required. In Connecticut, proof of town license is required. Please note: All pets must be in good health prior to receiving any grooming services.
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Do I need to book an appointment in advance?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Booking an appointment for a grooming service ahead of time ensures that you and your pet are not kept waiting any longer than necessary. Weekends tend to be especially busy, so appointments are highly recommended on Saturdays and Sundays. We're happy to take walk-ins when we have availability. Please note: All cat services require specially trained associates to complete, are not available on weekends and are only available at select salons. Call your salon ahead of time to ensure a certified cat groomer is available.
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            Can I stay and watch my pet being groomed?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, our Grooming Salons have a viewing area for you to comfortably watch your dog or cat getting groomed. For the safety of pets, however, we don't allow pet parents to assist with the grooming process or to stay in the grooming kennel or bathing areas.
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+            Do you offer express services?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we offer express grooming services. An express service includes an expedited service provided by a dedicated grooming professional, limiting the amount of time your pet will spend in the salon. When the groom is complete, your pet will be returned to you right away, so we will ask you to stay in or near the store during your pet’s appointment. Please call our Customer Service Center at 1-888-332-7387 or speak to an associate in store to add this service to your pet's groom.
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+            How should I prepare my cat for their groom?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Cats love to disappear when it’s least convenient. To ensure they’ll be ready for their appointment, always:
+
+            put their carrier out a few days early so they can get used to it
+            keep them in the house the night before if they’re an indoor/outdoor cat
+            use their favorite treat to attract them when it’s time to leave
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+            Do you provide emergency veterinary services?
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, our clinic offers 24/7 emergency services for critical pet conditions. Please call ahead to ensure a vet is available.
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+            What is the Additional Brushing Fee?
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            The Additional Brushing Fee is added to the appointment of select breeds that typically require additional brushing above and beyond what is included in the base service. This fee may be waived by PetSmart based upon the assessment of the pet’s coat at the time of check in.
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+            What are your working hours?
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We’re open daily from 10:00 AM to 10:00 PM.
+          </div>
+        </div>
+      </div>
+   </div>
+  </section>
+
+  <footer class="bg-light text-center text-lg-start text-muted mt-5 border-top">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h5 class="text-uppercase">Our Veterinary Clinic</h5>
+          <p>Providing compassionate and professional care for your beloved pets since 2020.</p>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="text-uppercase">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted text-decoration-none">Services</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Appointments</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="text-uppercase">Contact</h6>
+          <p class="mb-1">123 Pet Street, Animal City</p>
+          <p class="mb-0">Email: info@vetclinic.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3 bg-white text-dark">
+      &copy; 2025 Our Veterinary Clinic. All rights reserved.<br> <br><a href="index.html" class=" btn btn-outline-secondary"> Go To Home</a> 
+
+    </div>
+
+<button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
+    ↑
+  </button>
+
+  <script>
+    const backToTopBtn = document.getElementById("backToTopBtn");
+  
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+  
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
